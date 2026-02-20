@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Css/style.css">i    
+    <title>Document</title>
+</head>
+<body>
+    <section id="publicar" class="form-section">
+  <div class="form-card">
+
+    <h2>Publicar Item Perdido</h2>
+    <p class="subtitle">Informe os detalhes para ajudar a encontrar o objeto</p>
+
+    <form>
+
+      <div class="upload-area">
+        <label for="imagem">
+          <div class="camera-icon">📷</div>
+          <span>Adicionar foto do item</span>
+        </label>
+        <input type="file" id="imagem" accept="image/*">
+      </div>
+
+      <div class="form-grid">
+        <input type="text" placeholder="Nome do objeto" required>
+        <input type="text" placeholder="Município" required>
+      </div>
+
+      <input type="text" placeholder="Local onde perdeu" required>
+
+      <textarea placeholder="Descrição detalhada do objeto"></textarea>
+
+      <h3>Contacto do dono</h3>
+
+      <div class="form-grid">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="tel" placeholder="Telefone" required>
+      </div>
+
+      <input type="email" placeholder="Email">
+
+      <button type="submit" class="btn-publicar">
+        Publicar Item
+      </button>
+
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

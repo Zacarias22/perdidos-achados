@@ -1,0 +1,327 @@
+*{ 
+    box-sizing: border-box;
+     padding: 0;
+      margin: 0;
+ }
+  body { 
+    font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+      font-weight: weight;
+       font-style: normal;
+     }
+      header{
+         height: 85vh;
+          width: 100%; 
+        } 
+        .logo{
+             height: 100px;
+             }
+              .logo img{ 
+                height: 150px;
+             }
+              .Central{
+                 display: flex;
+                  margin: 10px;
+                   padding: 10px; 
+                   justify-content: center;
+                    height: 20vh;
+                     width: 100%;
+                     } .Central .sub-meno
+                     {
+
+                      }
+                       ul{
+                         margin-top: 50px;
+                          display: flex; 
+                          padding: 10px;
+                         } 
+                         ul li{
+                             padding: 10px;
+                              margin-left: 10px;
+                               text-decoration: none;
+                                list-style: none;
+                             }
+                              ul li a { 
+    text-decoration: none;
+     text-align: center;
+      color: grey; 
+      font-size: 20px;
+     }
+/* Texto principal */
+.escolhas {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.escolhas h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Botões principais */
+.itens {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.iten-1,
+.iten-2 {
+    width: 280px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.iten-1 {
+    background-color: #2ecc71;
+}
+
+.iten-2 {
+    background-color: white;
+    border: 2px solid #2ecc71;
+}
+
+.iten-1 a,
+.iten-2 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.iten-1 a {
+    color: white;
+}
+
+.iten-2 a {
+    color: #2ecc71;
+}
+
+.iten-1:hover {
+    transform: scale(1.05);
+}
+
+.iten-2:hover {
+    background-color: #2ecc71;
+}
+
+.iten-2:hover a {
+    color: white;
+}
+
+/* ================= MAIN ================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    margin-top:10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* COMO FUNCIONA */
+.funciona {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.box {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.box span {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* FILTROS */
+.filtros {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* PUBLICAÇÕES */
+.publicacoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 15px 5px;
+}
+
+.card p {
+    margin: 0 15px 20px;
+    color: #666;
+}
+
+/* TAGS */
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+}
+
+.perdido {
+    background: #e74c3c;
+}
+
+.encontrado {
+    background: #2ecc71;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding-top: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 0 20px 40px;
+}
+
+.footer h2,
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    background-color: #020617;
+}
+.footer-location select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+.footer-location button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #38bdf8;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-location button:hover {
+    background-color: #0ea5e9;
+}
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+
+    .Central {
+        flex-direction: column;
+    }
+
+    .sub-menu ul {
+        margin-top: 15px;
+    }
+
+    .funciona {
+        flex-direction: column;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .itens {
+        flex-direction: column;
+    }
+}

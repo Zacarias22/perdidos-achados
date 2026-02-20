@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Css/style.css">i    
+    <title>Document</title>
+</head>
+<body>
+    <section id="reportar" class="form-section">
+  <div class="form-card">
+
+    <h2>Reportar Item Encontrado</h2>
+    <p class="subtitle">
+      Encontrou um objeto? Publique aqui para ajudar a devolver ao dono.
+    </p>
+
+    <form>
+
+      <div class="upload-area">
+        <label for="foto-achado">
+          <div class="camera-icon">📷</div>
+          <span>Adicionar foto do item encontrado</span>
+        </label>
+        <input type="file" id="foto-achado" accept="image/*">
+      </div>
+
+      <div class="form-grid">
+        <input type="text" placeholder="Nome do objeto" required>
+        <input type="text" placeholder="Município onde encontrou" required>
+      </div>
+
+      <input type="text" placeholder="Local exato onde encontrou" required>
+
+      <textarea placeholder="Descrição do item (cor, marca, detalhes)"></textarea>
+
+      <h3>Contacto de quem encontrou</h3>
+
+      <div class="form-grid">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="tel" placeholder="Telefone" required>
+      </div>
+
+      <input type="email" placeholder="Email">
+
+      <button type="submit" class="btn-publicar">
+        Publicar Item Encontrado
+      </button>
+
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
