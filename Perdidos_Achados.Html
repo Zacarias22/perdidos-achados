@@ -53,54 +53,35 @@
         <div class="texto"> 
          <div class="container">
   
-  
+
 
         <h2>Como Funciona</h2>
 
-        <div class="funciona">
-            <div class="box">
-                <span>📄</span>
-                <p>Publicar</p>
-            </div>
-            <div class="box">
-                <span>💬</span>
-                <p>Conectar</p>
-            </div>
-            <div class="box">
-                <span>🤝</span>
-                <p>Reunir</p>
-            </div>
-        </div>
+<div class="funciona">
+    <div class="box" id="publicarBox">
+        <span>📄</span>
+        <p>Publicar</p>
+    </div>
+    <div class="box" id="conectarBox">
+        <span>💬</span>
+        <p>Conectar</p>
+    </div>
+    <div class="box" id="reunirBox">
+        <span>🤝</span>
+        <p>Reunir</p>
+    </div>
+</div>
         <h2>Publicações Recentes</h2>
 
-        <div class="publicacoes">
-            <div class="card">
-                <span class="tag perdido">PERDIDO</span>
-                <img src="img/licensed-image (1).jpg" alt="Cão perdido">
-                <h3>Lost</h3>
-                <p>Luanda</p>
-            </div>
+<div class="filtros-recentes">
+    <button onclick="mostrarItens()">Todos</button>
+</div>
 
-            <div class="card">
-                <span class="tag encontrado">ENCONTRADO</span>
-                <img src="img/licensed-image.jpg" alt="Achado">
-                <h3>Found</h3>
-                <p>Viana</p>
-            </div>
+<input type="text" id="pesquisa" placeholder="Pesquisar item...">
 
-            <div class="card">
-                <span class="tag perdido">PERDIDO</span>
-                <img src="img/Telefone.jpg" alt="Telemóvel">
-                <h3>Phone Perdido</h3>
-                <p>Talatona</p>
-            </div>
-        </div>
-
-    </div>
-
+<div class="publicacoes" id="listaPublicacoes"></div>
     </main>
 
-</body>
 
 
 <footer class="footer">
@@ -115,7 +96,7 @@
 
     <div class="footer-location">
       <h3>Filtrar por localidade</h3>
-      <select>
+      <select id="filtroMunicipio">
         <option>Selecionar município</option>
         <option>Belas</option>
         <option>Cazenga</option>
@@ -125,7 +106,7 @@
         <option>Kilamba</option>
         <option>Sambizanga</option>
       </select>
-      <button>Filtrar</button>
+      <button onclick="filtrarItens()">Filtrar</button>
     </div>
 
     <div class="footer-contact">
@@ -141,4 +122,6 @@
     <p>© 2026 Perdidos & Achados — Todos os direitos reservados</p>
   </div>
 </footer>
+<script src="Js/principal.js"></script>
+</body>
 </html>

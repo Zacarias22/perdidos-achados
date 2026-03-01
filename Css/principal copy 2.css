@@ -147,19 +147,6 @@ h2 {
     display: block;
     margin-bottom: 15px;
 }
-/* Efeito de clique (press) */
-.funciona .box:active {
-    transform: scale(0.95);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-/* Efeito de destaque ao selecionar */
-.funciona .box.selected {
-    background-color: #007BFF;
-    color: #fff;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    transition: 0.3s;
-}
 
 /* FILTROS */
 .filtros {
@@ -179,140 +166,60 @@ h2 {
 
 /* PUBLICAÇÕES */
 .publicacoes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-/* Card individual */
 .card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 250px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-/* Imagem do item */
 .card img {
     width: 100%;
-    height: 150px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
 }
 
-/* Título */
 .card h3 {
-    font-size: 18px;
-    margin: 5px 0;
-    text-align: center;
+    margin: 15px 15px 5px;
 }
 
-/* Parágrafos */
 .card p {
-    font-size: 14px;
-    margin: 3px 0;
-    text-align: center;
-    color: #555;
+    margin: 0 15px 20px;
+    color: #666;
 }
 
-/* WhatsApp Button */
-.card .btn-whatsapp {
-    display: block;
-    background: #25D366;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 10px 0;
-    width: 100%;
-    font-weight: bold;
-    transition: background 0.2s;
+/* TAGS */
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
 }
 
-.card .btn-whatsapp:hover {
-    background: #1ebe57;
+.perdido {
+    background: #e74c3c;
 }
 
-/* Ações: Editar / Excluir */
-.card .acoes {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 5px;
+.encontrado {
+    background: #2ecc71;
 }
 
-.card .acoes button {
-    background: #f0f0f0;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
-}
+/* ================= FOOTER ================= */
 
-.card .acoes button:hover {
-    background: #e0e0e0;
-}
-
-/* Mensagem quando não há itens */
-.publicacoes p {
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    width: 100%;
-}
-
-/* Input pesquisa */
-#pesquisa {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Botão “Todos” */
-.filtros-recentes button {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 10px;
-    transition: background 0.2s;
-}
-
-.filtros-recentes button:hover {
-    background: #0056b3;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .card {
-        width: 90%;
-    }
-}
 .footer {
     background-color: #0f172a;
     color: #e2e8f0;
